@@ -1,17 +1,13 @@
 import React from "react";
 import ticketsImage from "./../img/ticket.jpg";
+import { styles } from '../styles/main'
 
 function Header(){
-  const imgStyle = {
-    width: '30%',
-    height: 'auto',
-  }
-
   return (
-    <React.Fragment>
+    <>
       <h1>Help Queue</h1>
-      <img src={ticketsImage} alt="An image of tickets" style={imgStyle}/>
-    </React.Fragment>
+      <img src={ticketsImage} alt="ticket" style={styles.imgStyle} />
+    </>
   );
 }
 
